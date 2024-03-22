@@ -1,8 +1,8 @@
 package Biblioteca
 
-libro import Libro
-socio import Socio
-prestamo import Prestamo
+import Biblioteca.Libro
+import Biblioteca.Socio
+import Biblioteca.Prestamo
 
 class App {
 	fun exec() {
@@ -16,10 +16,11 @@ class App {
         	val prestamo2 = Prestamo(libro1, socio2)
 
         	libro1.informacion()
+        	libro2.informacion()
         	socio2.informacion()
-        	prestamo1.registrar_prestamo("2024-03-15")
+        	prestamo1.registrarPrestamo("2024-03-15")
         	libro1.informacion()
-        	prestamo2.devolver_prestamo()
+        	prestamo2.devolverPrestamo()
         	libro1.informacion()
 	
 	}
