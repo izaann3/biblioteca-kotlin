@@ -1,7 +1,7 @@
 package Biblioteca
 
-libro import Libro
-socio import Socio
+import Biblioteca.Libro
+import Biblioteca.Socio
 
 class Prestamo(val libro: Libro, val socio: Socio)
 {
