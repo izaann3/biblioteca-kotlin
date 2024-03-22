@@ -1,6 +1,6 @@
 package Biblioteca
 
-libro import Libro
+import Biblioteca.Libro
 
 class Socio(val nombre: String, val apellido: String, val identificador: Int) {
 
