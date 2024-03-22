@@ -3,8 +3,8 @@ package Biblioteca
 class Libro(val titulo: String, val autor: String, var cantidad: Int) {
 
     fun prestar() {
-        if (ejemplaresDisponibles > 0) {
-            ejemplaresDisponibles--
+        if (cantidad > 0) {
+            cantidad--
             println("Libro prestado: $titulo, Autor: $autor")
         } else {
             println("No hay ejemplares disponibles de $titulo")
@@ -12,7 +12,7 @@ class Libro(val titulo: String, val autor: String, var cantidad: Int) {
     }
 
     fun devolver() {
-        ejemplaresDisponibles++
+        cantidad++
         println("Libro devuelto: $titulo, Autor: $autor")
     }
 
